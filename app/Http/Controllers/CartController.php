@@ -60,8 +60,8 @@ class CartController extends Controller
                 'message' => 'Successfully Added to Cart !',
             ]);
         }
-        
-		
+
+
     }
 
     /**
