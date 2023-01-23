@@ -1,14 +1,11 @@
 # Laravel 9 
 
-## Screenshots
-
-
 ## Run Locally
 
 Clone the project
 
 ```bash
- 
+    https://github.com/danielnr25/gritastic-v1.git
 ```
 
 Go to the project directory
