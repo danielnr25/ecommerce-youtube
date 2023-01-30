@@ -3,15 +3,15 @@
 @section('content')
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/breadcrumb.jpg') }}">
+    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('frontend/img/breadcrumb.png') }}">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="breadcrumb__text">
-              <h2>Organi Shop</h2>
+              <h2 style="color:#000000">Gritastic Tienda</h2>
               <div class="breadcrumb__option">
-                <a href="./index.html">Home</a>
-                <span>Shop</span>
+                <a style="color:#000000" href="{{ url('/') }}">Bienvenido</a>
+                <span style="color:#000000">Tienda</span>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@
             @include('frontend.shop.sidebar')
           </div>
           <div class="col-lg-9 col-md-7" id="product-shop">
-           
+
           </div>
         </div>
       </div>

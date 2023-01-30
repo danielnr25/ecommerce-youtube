@@ -1,23 +1,30 @@
 @extends('layouts.admin')
 
 @section('content')
-        <div class="card">
-            <div class="card-header">
-                <h3>Create Category
-                    <a href="{{ route('admin.categories.index') }}" class="btn btn-primary float-right">
-                        Go Back
-                    </a>
-                </h3>     
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h3 class="m-2" style="font-size: 1.8rem;color:#000006;">Agregar Categoria</h3>
             </div>
+            <div class="col-sm-6">
+            <a href="{{ route('admin.categories.index') }}" class="btn btn-primary float-right" style="background: #4338ca;">
+                Regresar
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="card">
             <div class="card-body">
                 <form action="{{ route('admin.categories.store') }}" method="post">
-                    @csrf 
+                    @csrf
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Nombre de la categoria</label>
                         <input type="text" name="name" class="form-control">
                     </div>
                     <div class="form-group {{ $errors->has('photo') ? 'has-error' : '' }}">
-                        <label for="photo">Photo</label>
+                        <label for="photo">Imagen</label>
                         <div class="needsclick dropzone" id="photo-dropzone">
 
                         </div>
@@ -27,7 +34,7 @@
                             </em>
                         @endif
                     </div>
-                    <div class="form-group">
+<!--                     <div class="form-group">
                         <label for="parent">Parent</label>
                         <select name="category_id" class="form-control">
                             <option value="">-- Default --</option>
@@ -35,9 +42,9 @@
                                 <option value="{{ $id }}">{{ $categoryName }}</option>
                             @endforeach
                         </select>
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
                     </div>
                 </form>
             </div>
@@ -47,7 +54,7 @@
 <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 @endpush
 
-@push('script-alt')   
+@push('script-alt')
 <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <script>
     Dropzone.options.photoDropzone = {

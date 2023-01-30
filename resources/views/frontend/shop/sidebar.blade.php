@@ -1,6 +1,6 @@
 <div class="sidebar">
     <div class="sidebar__item">
-    <h4>Categories</h4>
+    <h4>Categorias</h4>
     <ul>
         @foreach($menu_categories as $menu_category)
         <li>
@@ -17,7 +17,7 @@
     </ul>
     </div>
     <div class="sidebar__item">
-    <h4>Tags</h4>
+    <h4>Etiquetas</h4>
     @foreach($menu_tags as $menu_tag)
     <div class="sidebar__item__size">
         <label for="large">
