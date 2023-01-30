@@ -1,15 +1,11 @@
-# Laravel 9 & React js - Ecommerce application
-
-## Screenshots
-
-![preview img](/preview.png)
+# Laravel 9 
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/abdulaziz-m5u/ecommerce-youtube.git project-name
+    https://github.com/danielnr25/gritastic-v1.git
 ```
 
 Go to the project directory
